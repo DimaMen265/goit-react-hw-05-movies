@@ -1,12 +1,12 @@
 import { Routes, Route } from "react-router-dom";
 import { Header } from "./Header/Header";
 import { Home } from "./Home/Home";
+import { Movies } from "./Movies/Movies";
+import { MoviesDetails } from "./MoviesDetails/MoviesDetails";
 import { NotFound } from "./NotFound/NotFound";
 
 import { lazy } from "react";
 
-const Movies = lazy(() => import("./Movies/Movies"));
-const MoviesDetails = lazy(() => import("./MoviesDetails/MoviesDetails"));
 const Cast = lazy(() => import("./Cast/Cast"));
 const Reviews = lazy(() => import("./Reviews/Reviews"));
 
@@ -20,8 +20,8 @@ export const App = () => {
                     <Route path="cast" element={<Cast />} />
                     <Route path="reviews" element={<Reviews />} />
                 </Route>
-                <Route path="*" element={<NotFound />} />
             </Route>
+            <Route path="*" element={<NotFound />} />
         </Routes>
     );
 };

@@ -10,7 +10,7 @@ let schema = object({
     searchString: string().required(),
 });
 
-const Movies = () => {
+export const Movies = () => {
     const [movies, setMovies] = useState();
     const [searchParams, setSearchParams] = useSearchParams();
     const location = useLocation();
@@ -76,5 +76,3 @@ const Movies = () => {
         </main>
     );
 };
-
-export default Movies;

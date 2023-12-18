@@ -42,7 +42,7 @@ const PageLink = styled(NavLink)`
   }
 `;
 
-const MoviesDetails = () => {
+export const MoviesDetails = () => {
     const { movieId } = useParams();
     const [details, setDetails] = useState(null);
     const location = useLocation();
@@ -120,5 +120,3 @@ const MoviesDetails = () => {
         </main>
     );
 };
-
-export default MoviesDetails;
