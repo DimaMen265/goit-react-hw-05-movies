@@ -1,6 +1,7 @@
 import { Routes, Route } from "react-router-dom";
 import { Header } from "./Header/Header";
 import { Home } from "./Home/Home";
+import { NotFound } from "./NotFound/NotFound";
 
 import { lazy } from "react";
 
@@ -19,7 +20,7 @@ export const App = () => {
                     <Route path="cast" element={<Cast />} />
                     <Route path="reviews" element={<Reviews />} />
                 </Route>
-                <Route path="*" element={<Home />} />
+                <Route path="*" element={<NotFound />} />
             </Route>
         </Routes>
     );
