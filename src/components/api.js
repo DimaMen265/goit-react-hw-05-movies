@@ -40,18 +40,12 @@ const getMovieReviews = async (id, abortController) => {
   return await axios.get(`/movie/${id}/reviews?${params}`, { signal: abortController.signal });
 };
 
-const getConfiguration = async () => {
-  const params = new URLSearchParams(paramsObj);
-  return await axios.get(`/configuration?${params}`);
-};
-
 export {
   getTrending,
   getSearchMovies,
   getMovieDetails,
   getMovieCredits,
   getMovieReviews,
-  getConfiguration,
   DEF_PATH_IMAGE,
   DEF_LOGO_SIZE,
   DEF_POSTER_SIZE,
