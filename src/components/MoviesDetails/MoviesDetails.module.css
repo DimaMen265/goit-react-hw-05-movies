@@ -1,0 +1,31 @@
+.moviesDetailsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .moviesDetailsContainer {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.moviesDetailsTitle {
+  margin-bottom: 8px;
+}
+
+.infoText {
+  margin-bottom: 16px;
+}
+
+.infoText:last-child {
+  margin-bottom: 0;
+}
+
+.pageList {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 16px;
+}

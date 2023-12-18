@@ -1,0 +1,27 @@
+.castList {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.castItem {
+  min-width: 185px;
+  max-width: 185px;
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px -1px rgba(0, 0, 0, 0.12);
+}
+
+.infoContainer {
+  padding: 8px 4px;
+}
+
+.castInfo {
+  margin-bottom: 8px;
+}
+
+.castInfo:last-child {
+  margin-bottom: 0;
+}
