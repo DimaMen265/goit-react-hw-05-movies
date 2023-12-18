@@ -38,10 +38,10 @@ export const Home = () => {
                     trending &&
                     trending.map(item => (
                         <li key={item.id} className={styles.itemTrending}>
-                            <img src={`${DEF_PATH_IMAGE}${DEF_LOGO_SIZE}${item.poster_path}`} alt={item.title} />
-                            <div className={styles.linkContainer}>
-                                <Link to={`/movies/${item.id}`} state={{ from: location }}>{item.title}</Link>
-                            </div>    
+                            <Link to={`/movies/${item.id}`} state={{ from: location }}>
+                                <img src={`${DEF_PATH_IMAGE}${DEF_LOGO_SIZE}${item.poster_path}`} alt={item.title} />
+                                <p className={styles.textTrending}>{item.title}</p>
+                            </Link>  
                         </li>
                     ))
                 }

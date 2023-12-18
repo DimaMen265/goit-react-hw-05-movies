@@ -65,10 +65,10 @@ const Movies = () => {
                     movies &&
                     movies.map(item => (
                         <li key={item.id} className={styles.searchItem}>
-                            <img src={`${DEF_PATH_IMAGE}${DEF_LOGO_SIZE}${item.poster_path}`} alt={item.title} />
-                            <div className={styles.linkContainer}>
-                                <Link to={`/movies/${item.id}`} state={{ from: location }} className={styles.searchLink}>{item.title}</Link>
-                            </div>
+                            <Link to={`/movies/${item.id}`} state={{ from: location }}>
+                                <img src={`${DEF_PATH_IMAGE}${DEF_LOGO_SIZE}${item.poster_path}`} alt={item.title} />
+                                <p className={styles.searchText}>{item.title}</p>
+                            </Link>
                         </li>
                     ))
                 }

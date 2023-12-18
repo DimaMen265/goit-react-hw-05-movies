@@ -5,27 +5,39 @@
   margin-bottom: 16px;
 }
 
+.posterContainer {
+  display: flex;
+  justify-content: center;
+}
+
 @media screen and (min-width: 768px) {
   .moviesDetailsContainer {
     display: flex;
     flex-direction: row;
   }
+
+  .posterContainer {
+    display: block;
+    min-width: 185px;
+  }
 }
 
-.moviesDetailsTitle {
-  margin-bottom: 8px;
+.contentContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 
-.infoText {
-  margin-bottom: 16px;
-}
-
-.infoText:last-child {
-  margin-bottom: 0;
+.sectionContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 
 .pageList {
   display: flex;
   gap: 16px;
+  padding: 16px 32px;
   margin-bottom: 16px;
+  box-shadow: 0 0 10px lightgray;
 }

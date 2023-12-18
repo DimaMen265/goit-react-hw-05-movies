@@ -10,13 +10,13 @@
 }
 
 .notFoundTitle {
-  font-size: 10rem;
+  font-size: 160px;
   color: #e74c3c;
   margin: 0;
 }
 
 .notFoundText {
-  font-size: 1.5rem;
+  font-size: 24px;
   color: #333;
   margin: 20px 0;
 }
